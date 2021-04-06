@@ -36,9 +36,10 @@
 
 
 /* Start Set My MAin Vars */
-let input         = document.querySelector(".field input"),
+   let  input         = document.querySelector(".field input"),
 	tasksParent   = document.querySelector(".tasks"),
 	taskBoxes     = document.querySelectorAll(".tasks .task-box"),
+        addButton     = document.getElementById("addTask"),
 	note          = document.querySelector(".note");
 /* End Set My Main Vars */
 
@@ -73,7 +74,7 @@ let input         = document.querySelector(".field input"),
 
 /* Start Type Todo Message */
 	// Input On Blur Function
-		input.onblur = () => {
+		addButton.onclick = () => {
 			if (input.value === "") {
 				note.style.display = "block";
 			} else {
