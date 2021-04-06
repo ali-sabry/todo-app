@@ -105,6 +105,7 @@ header .app .field input {
 header .app .field input:focus {
   outline: none;
 }
+
 header .app .field .note {
   text-transform: capitalize;
   color: white;
