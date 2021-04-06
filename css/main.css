@@ -105,8 +105,7 @@ header .app .field input {
 header .app .field input:focus {
   outline: none;
 }
-header .app .field .add-task
-{
+header .app .field .add-task {
     position: absolute;
     right: 20px;
     top: 8px;
@@ -116,7 +115,7 @@ header .app .field .add-task
     width: 30px;
     height: 30px;
     text-align: center;
-    line-height: 30px;
+    line-height: 34px;
 }
 header .app .field .add-task:hover {
     background-color: #fff; 
