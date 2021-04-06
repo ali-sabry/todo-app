@@ -105,7 +105,24 @@ header .app .field input {
 header .app .field input:focus {
   outline: none;
 }
-
+header .app .field .add-task
+{
+    position: absolute;
+    right: 20px;
+    top: 8px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+header .app .field .add-task:hover {
+    background-color: #fff; 
+    color: #000;
+    border-color: transparent;
+}  
 header .app .field .note {
   text-transform: capitalize;
   color: white;
