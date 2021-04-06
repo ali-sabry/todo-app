@@ -1,0 +1,313 @@
+/* Start Global Style */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  height: 4000px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: capitalize;
+}
+
+a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #9394a5;
+  transition: all .3s ease-in-out;
+}
+
+::placeholder {
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: capitalize;
+  color: #9394a5;
+}
+
+.container {
+  width: 50%;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.active-icon {
+  width: 8px;
+  height: 8px;
+  padding: 2px;
+  border-radius: 50%;
+  background-color: red;
+  color: #fff;
+  line-height: 8px;
+  text-align: center;
+}
+.active-icon i {
+  text-align: center;
+  color: #fff;
+}
+
+/* End Global Style */
+/* Start App Style */
+header {
+  width: 100%;
+  height: 250px;
+  background-image: url("../images/bg-desktop-light.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+header .app .head-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+header .app .head-info .title h3 {
+  color: white;
+  letter-spacing: 3px;
+  font-size: 30px;
+}
+header .app .head-info .icon {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-image: url("../images/icon-moon.svg");
+}
+header .app .field {
+  width: 100%;
+  margin: 0 auto 30px;
+  position: relative;
+}
+header .app .field:after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 22px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #e4e5f1;
+  transform: translateY(-50%);
+}
+header .app .field input {
+  width: 100%;
+  padding: 13px 15px;
+  border-radius: 5px;
+  border: none;
+  text-indent: 45px;
+  font-size: 18px;
+}
+header .app .field input:focus {
+  outline: none;
+}
+header .app .field .note {
+  text-transform: capitalize;
+  color: white;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: -19px;
+  left: 50%;
+  background-color: red;
+  transform: translateX(-50%);
+  display: none;
+}
+header .app .tasks {
+  width: 100%;
+  margin: auto;
+  background-color: white;
+  color: #484b6a;
+  border-radius: 7px;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.3);
+  height: 317px;
+  overflow-y: auto;
+}
+header .app .tasks ::selection {
+  background-color: transparent;
+}
+header .app .tasks .task-box, header .app .tasks .task-completed {
+  cursor: move;
+  padding: 0 15px;
+  height: 63px;
+  line-height: 63px;
+  align-items: center;
+  position: relative;
+}
+header .app .tasks .task-box:not(:last-of-type), header .app .tasks .task-completed:not(:last-of-type) {
+  border-bottom: 1px solid #e4e5f1;
+}
+header .app .tasks .task-box span, header .app .tasks .task-completed span {
+  line-height: 60px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  padding: 2px;
+  margin-right: 10px;
+  margin-top: 18px;
+  float: left;
+  transition: all .3s;
+  cursor: pointer;
+}
+header .app .tasks .task-box span:hover, header .app .tasks .task-completed span:hover {
+  border-color: #57ddff !important;
+}
+header .app .tasks .task-box h5, header .app .tasks .task-completed h5 {
+  float: left;
+  width: 80%;
+  padding-left: 34px;
+}
+header .app .tasks .task-box .close, header .app .tasks .task-completed .close {
+  float: left;
+  width: 10%;
+  text-align: right;
+}
+header .app .tasks .task-box .close i, header .app .tasks .task-completed .close i {
+  cursor: pointer;
+}
+header .app .tasks .task-completed {
+  color: #4d5066;
+}
+header .app .tasks .task-completed span {
+  background-image: linear-gradient(to right, #57ddff, #c058f3);
+  background-size: cover;
+  position: relative;
+  z-index: 10;
+}
+header .app .tasks .task-completed span:after {
+  content: " ";
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/icon-check.svg");
+  background-repeat: no-repeat;
+  z-index: 1;
+  border-radius: 50%;
+}
+header .app .tasks .task-completed h5 {
+  text-decoration: line-through;
+  opacity: .6;
+}
+header .app .footer {
+  display: flex;
+  justify-content: space-between;
+  clear: both;
+  font-size: 14px;
+  padding: 12px 5px;
+  text-transform: capitalize;
+  background-color: white;
+  border-top: 1px solid #cccccc;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 0 0 10px 10px;
+}
+header .app .footer .statement span {
+  display: inline-block;
+  margin-right: 15px;
+  cursor: pointer;
+}
+header .app .footer .statement span.active, header .app .footer .statement span:hover {
+  color: #3a7bfd;
+}
+header .app .footer .clear a:hover, header .app .footer .clear-all a:hover {
+  color: #3a7bfd;
+}
+header .app .message {
+  width: 80%;
+  margin: 30px auto;
+  color: #9394a5;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.dark-mode {
+  background-color: #161722;
+}
+.dark-mode ::placeholder {
+  color: #4d5066;
+}
+.dark-mode header {
+  background-image: url("../images/bg-desktop-dark.jpg");
+}
+.dark-mode header .head-info .icon {
+  background-image: url("../images/icon-sun.svg");
+}
+.dark-mode header .field:after {
+  border-color: #4d5066;
+}
+.dark-mode header .field input {
+  background-color: #25273c;
+  color: white;
+  text-transform: capitalize;
+}
+.dark-mode header .tasks {
+  background-color: #25273c;
+  color: #cccccc;
+}
+.dark-mode header .tasks .task-box {
+  border-color: #4d5066;
+}
+.dark-mode header .tasks .task-box span {
+  border-color: #4d5066;
+}
+.dark-mode header .tasks .task-completed {
+  color: #4d5066;
+}
+.dark-mode header .footer {
+  background-color: #25273c;
+  border-radius: 0 0 10px 10px;
+  border-top: 1px solid #4d5066;
+}
+.dark-mode header .footer .remind {
+  color: #cccccc;
+}
+.dark-mode header .footer .statement span {
+  color: #cccccc;
+}
+.dark-mode header .footer .clear a:hover, .dark-mode header .footer .clear-all a:hover {
+  color: white;
+}
+.dark-mode header .message {
+  color: #4d5066;
+}
+
+/* End App Style */
+@media (max-width: 768px) {
+  .container {
+    width: 85%;
+  }
+
+  header {
+    background-image: url("../images/bg-mobile-light.jpg");
+  }
+  header .switch-mode {
+    position: absolute;
+    top: 35px;
+    right: 23%;
+    color: #fff;
+    transform: translateX(-50%);
+  }
+  header .head-info .icon {
+    margin-top: -14px;
+  }
+  header .footer {
+    font-size: 9px;
+  }
+
+  .dark-mode header {
+    background-image: url("../images/bg-mobile-dark.jpg");
+  }
+  .dark-mode header .footer {
+    font-size: 9px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
