@@ -65,7 +65,7 @@
 			taskBox.appendChild(closeParent);
 
 		// Append Task Box To Parent Tasks
-			tasksParent.appendChild(taskBox);
+			tasksParent.prepend(taskBox);
 
 		// Set The Content On Task Mission
 		   taskMission.textContent = input.value;			
