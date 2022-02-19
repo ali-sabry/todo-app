@@ -22,9 +22,9 @@ This application helps you to save your thoughts to do later.
 ```
 # Lincess
 ******************************************************************/
-/*------------------------------------------------------------------
+
 * Author      : [Ali sabry](https://www.linkedin.com/in/ali-sabry/)
 * Created     : 2021.
 
 * All Copyright Reserved To Author [Ali sabry](https://www.linkedin.com/in/ali-sabry/)
--------------------------------------------------------------------*/
+
