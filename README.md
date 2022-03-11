@@ -2,6 +2,12 @@
 Save Your Ideas & Work It later.
 
 <hr />
+<img  src="images/preview-dark.png" />
+
+<hr />
+<img  src="images/preview-light.png" />
+
+<hr />
 
 # Preview Link
 [Preview Link](https://ali-sabry.github.io/todo-app/)
