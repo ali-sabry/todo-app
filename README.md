@@ -1,4 +1,4 @@
-# Todo App ![version](https://img.shields.io/badge/version-1.1-brightgreen)
+# Todo App 
 Save Your Ideas & Work It later.
 
 ```
