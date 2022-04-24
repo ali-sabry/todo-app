@@ -422,7 +422,7 @@ header .app .message {
       background-image: url("../images/bg-mobile-dark.jpg");
     }
 
-    .dark-mode header .footer {
+     header .footer {
       font-size: 12px;
     }
 
@@ -432,7 +432,7 @@ header .app .message {
   }
 
   @media screen and (max-width: 376px) {
-    .dark-mode header .footer {
+    header .footer {
       font-size: 8px !important;
     }
   }
